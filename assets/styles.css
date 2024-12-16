@@ -1,0 +1,129 @@
+/* Import Quicksand Light 300 font */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+/* Apply Quicksand font globally */
+* {
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Custom styles for the application */
+.stButton button {
+    width: 100%;
+    border-radius: 4px;
+    margin-top: 10px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.entity-card {
+    padding: 1rem;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.relationship-line {
+    stroke: #666;
+    stroke-width: 2;
+}
+
+.node-capability {
+    fill: #ff7f0e;
+}
+
+.node-use-case {
+    fill: #1f77b4;
+}
+
+.node-tool {
+    fill: #2ca02c;
+}
+
+.node-product {
+    fill: #d62728;
+}
+
+/* Additional Streamlit specific font styling */
+.stMarkdown, .stText, .stSelectbox, .stMultiSelect {
+    font-family: 'Quicksand', sans-serif !important;
+}
+
+/* Ensure headers use Quicksand */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Quicksand', sans-serif !important;
+}
+
+/* Style for expanders and other Streamlit components */
+.streamlit-expanderHeader {
+    font-family: 'Quicksand', sans-serif !important;
+}
+
+/* Style for top navigation */
+.nav-container {
+    display: flex !important;
+    justify-content: flex-end !important;
+    align-items: center !important;
+    padding: 1rem !important;
+    gap: 0.5rem !important;
+}
+
+.nav-container [data-testid="column"] {
+    width: auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.nav-container button {
+    white-space: nowrap !important;
+    width: auto !important;
+    padding: 0.5rem 1rem !important;
+    margin: 0 !important;
+}
+
+/* Remove conflicting styles */
+.nav-container > div,
+.nav-container > div:first-child,
+.nav-container button > div {
+    all: unset !important;
+    display: flex !important;
+}
+
+/* Navigation button styles with maximum specificity */
+div.nav-container button[data-testid="baseButton-secondary"],
+div.nav-container button[data-testid="baseButton-primary"],
+div.nav-container button[class*="stButton"],
+div.nav-container [data-testid="stButton"] button {
+    background-color: #f5f5f5 !important;
+    color: #333333 !important;
+    border: none !important;
+    font-family: 'Quicksand', sans-serif !important;
+    transition: all 0.3s ease !important;
+}
+
+div.nav-container button[data-testid="baseButton-secondary"]:hover,
+div.nav-container button[class*="stButton"]:hover,
+div.nav-container [data-testid="stButton"] button:hover {
+    background-color: #e0e0e0 !important;
+    color: #007bff !important;
+}
+
+div.nav-container button[data-testid="baseButton-primary"] {
+    background-color: #e0e0e0 !important;
+    color: #007bff !important;
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.4) !important;
+}
+
+/* Style input boxes in light mode */
+input[type="text"], 
+input[type="password"],
+input[type="number"],
+input[type="search"],
+input[type="email"],
+input[type="date"],
+textarea,
+.stTextInput > div > div > input,
+.stNumberInput > div > div > input,
+.stDateInput > div > div > input,
+.stTextArea > div > div > textarea {
+    background-color: #e0e0e0 !important;
+    border: 1px solid #ccc !important;
+}

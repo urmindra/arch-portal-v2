@@ -1,0 +1,14 @@
+[project]
+name = "repl-nix-workspace"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.11"
+dependencies = [
+    "altair>=5.4.1",
+    "itsdangerous>=2.2.0",
+    "networkx>=3.4.2",
+    "pandas>=2.2.3",
+    "psycopg2-binary>=2.9.10",
+    "pyvis>=0.3.2",
+    "streamlit>=1.39.0",
+]
